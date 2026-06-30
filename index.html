@@ -29,12 +29,42 @@
       </div>
     </header>
 
-    <main class="timeline" id="timeline"></main>
+    <div class="scroll-hint" id="scrollHint">
+      <span>Drag or scroll to travel the pathway</span>
+      <span class="arrow">→</span>
+    </div>
+  </div>
 
+  <main class="brain-scroll" id="scroll">
+    <div class="brain" id="brain">
+      <svg class="paths" id="paths" xmlns="http://www.w3.org/2000/svg"></svg>
+      <div class="nodes" id="nodes"></div>
+    </div>
+  </main>
+
+  <div class="wrap">
     <footer>
       <div>Curated timeline of foundational AI / ML / CS research.</div>
       <div class="mono">// built as an interactive showcase · 2026</div>
     </footer>
+  </div>
+
+  <!-- Detail overlay -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="m-title">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <div class="modal-top">
+        <span class="modal-num" id="m-num"></span>
+        <span class="modal-year" id="m-year"></span>
+        <span class="tag" id="m-tag"></span>
+      </div>
+      <h3 class="modal-title" id="m-title"></h3>
+      <div class="modal-authors" id="m-authors"></div>
+      <p class="modal-blurb" id="m-blurb"></p>
+      <div class="modal-venue" id="m-venue"></div>
+      <a class="paper-link" id="m-link" target="_blank" rel="noopener">Read the paper →</a>
+    </div>
   </div>
 
   <script src="papers.js"></script>
