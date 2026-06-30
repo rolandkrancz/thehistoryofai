@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The History of AI · 50 Papers That Built Machine Intelligence</title>
+  <meta name="description" content="An interactive timeline of the 50 most influential research papers in the history of AI, ML and computer science." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='%2322d3ee' stroke-width='6'/><circle cx='50' cy='50' r='12' fill='%23a855f7'/></svg>" />
+</head>
+<body>
+  <canvas id="neural-canvas"></canvas>
+
+  <div class="wrap">
+    <header>
+      <div class="eyebrow"><span class="dot"></span> An interactive research timeline</div>
+      <h1>The History of AI</h1>
+      <p class="subtitle">
+        The 50 papers that shaped artificial intelligence — from the first model of a neuron
+        in 1943 to the foundation models of today. Tap any node to dive deeper.
+      </p>
+      <div class="stats">
+        <div class="stat"><div class="num">50</div><div class="lbl">Papers</div></div>
+        <div class="stat"><div class="num">80</div><div class="lbl">Years</div></div>
+        <div class="stat"><div class="num">1943&nbsp;→&nbsp;2023</div><div class="lbl">Span</div></div>
+      </div>
+    </header>
+
+    <main class="timeline" id="timeline"></main>
+
+    <footer>
+      <div>Curated timeline of foundational AI / ML / CS research.</div>
+      <div class="mono">// built as an interactive showcase · 2026</div>
+    </footer>
+  </div>
+
+  <script src="papers.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
